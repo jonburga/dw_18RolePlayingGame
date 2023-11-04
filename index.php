@@ -16,15 +16,12 @@ $creatures = indexAction();
         <!-- Bootstrap Core CSS -->
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
    </head>
-
     <body>
-
-        <!-- Navigation -->
-          <nav class="navbar navbar-light navbar-fixed-top navbar-expand-md bg-faded" role="navigation">
+    <nav class="navbar navbar-light navbar-fixed-top navbar-expand-md bg-black" role="navigation">
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="index.php"> <img src="assets/img/small-logo.png" alt="" ></a>
+                <a class="navbar-brand" href="index.php"> <img src="assets/img/imagen-small.jpeg" alt="imagen-small" ></a>
 
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                   <ul class="navbar-nav mr-auto ">
@@ -35,19 +32,20 @@ $creatures = indexAction();
                     
                 </div>
               </nav>
+        
 
         <!-- Page Content -->
-        <div class="container">
+        <div class="container mt-3">
             <!-- Heading Row -->
             <div class="row">
-                <div class="col-md-8">
-                    <img class="img-responsive img-rounded" src="assets/img/main-logo.jpg" alt="">
+                <div class="col-md-6">
+                    <img class="img-responsive" src="assets/img/imagen-logo.jpeg" alt="iamgen-logo">
                 </div>
                 <!-- /.col-md-8 -->
                 <div class="col-md-4">
-                    <h1>Comunidad de usuarios de películas</h1>
+                <h1>Comunidad de usuarios de películas</h1>
                     <p>La maratón comienza aquí, en tu navegador</p>
-                    <a class="btn btn-primary btn-lg" href="http://cla.heroes-online.com/es-ES">Juega ahora!</a> 
+                    
                 </div>
                 </div>
             </div>

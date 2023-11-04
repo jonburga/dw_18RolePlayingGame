@@ -1,7 +1,7 @@
 <?php
 
 //dirname(__FILE__) Es el directorio del archivo actual
-require_once(dirname(__FILE__) . '/../conf/PersistentManager.php');
+require_once(dirname(__FILE__) . '/../conf/PersistentManager');
 
 class CreatureDAO {
 
