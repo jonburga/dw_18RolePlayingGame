@@ -1,5 +1,4 @@
 <?php
-//Es necesario que importemos los ficheros creados con anterioridad porque los vamos a utilizar desde este fichero.
 require_once(dirname(__FILE__) . '/app/controllers/indexController.php');
 
 //Recupero de la BD todas las criaturas a través del controlador
@@ -21,7 +20,7 @@ $creatures = indexAction();
     <body>
 
         <!-- Navigation -->
-          <nav class="navbar navbar-light navbar-fixed-top navbar-expand-md bg-faded" role="navigation" style="background-color: #e3f2fd;">
+          <nav class="navbar navbar-light navbar-fixed-top navbar-expand-md bg-faded" role="navigation">
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -39,7 +38,6 @@ $creatures = indexAction();
 
         <!-- Page Content -->
         <div class="container">
-
             <!-- Heading Row -->
             <div class="row">
                 <div class="col-md-8">
@@ -54,10 +52,8 @@ $creatures = indexAction();
                 </div>
             </div>
             <!-- /.row -->
-
             <hr>
 
-                    
             
             <!-- Content Row -->
             <?php for ($i = 0; $i < sizeof($creatures); $i+=3) { ?>
