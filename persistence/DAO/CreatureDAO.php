@@ -1,7 +1,7 @@
 <?php
 
 //dirname(__FILE__) Es el directorio del archivo actual
-require_once(dirname(__FILE__) . '/../conf/PersistentManager');
+require_once(dirname(__FILE__) . '/../conf/PersistentManager.php');
 
 class CreatureDAO {
 
@@ -50,7 +50,7 @@ class CreatureDAO {
     }
 
     public function selectById($id) {
-        $query = "SELECT name, abilities, avatar FROM " . CreatureDAO::CREATURE_TABLE . " WHERE idCreature=?";
+        $query = "SELECT name,description,avatar,attackPower,lifeLevel,weapon FROM " . CreatureDAO::CREATURE_TABLE . " WHERE idCreature=?";
         $stmt = mysqli_prepare($this->conn, $query);
         mysqli_stmt_bind_param($stmt, 'i', $id);
         mysqli_stmt_execute($stmt);

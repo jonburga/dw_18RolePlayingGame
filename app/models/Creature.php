@@ -65,9 +65,7 @@ class Creature {
           $result .= ' <img class="card-img-top rounded mx-auto d-block avatar" src='.$this->getAvatar().' alt="Card image cap">';
             $result .= '<div class="card-block">';
                 $result .= '<h2 class="card-title">' . $this->getName() . '</h2>';
-                $result .= '<p class=" card-text ">Description:'.$this->getDescription().'<br>
-                    AttackPower:
-                    '.$this->getAttackPower().'<br> LifeLevel'.$this->getLifeLevel().'<br>Weapon:'.$this->getWeapon().' </p>';                    
+                $result .= '<p class=" card-text ">Description:'.$this->getDescription().' </p>';                    
              $result .= '</div>';
              $result .= ' <div  class=" btn-group card-footer" role="group">';
                 $result .= '<a type="button" class="btn btn-secondary" href="app/views/detail.php?id='.$this->getIdCreature().'">Detalles</a>';
